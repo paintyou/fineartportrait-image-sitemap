@@ -1,5 +1,7 @@
 import { buildXml, fetchPublishedItems } from '../../lib/sitemap.mjs';
 
+// OpenNext converts Next.js's Node runtime to Cloudflare Workers.
+// Do not use runtime = 'edge': it is not supported by this adapter.
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
